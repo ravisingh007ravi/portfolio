@@ -1,10 +1,6 @@
 import { Download, Github, Linkedin, Menu, X, Instagram } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import Hero from './Hero'
-import Tech from './Tech/'
-import Expe from './Expe/'
-import Contact from './Contact/'
-import Footer from './Footer/'
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -20,7 +16,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className=" bg-linear-to-br from-slate-900 via-purple-900 to-slate-900">
       <header className="fixed top-0 left-0 right-0 z-50">
         <nav
           className={`mx-4 mt-4 backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl shadow-2xl transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-32 opacity-0'
@@ -118,13 +114,6 @@ export default function Navbar() {
           </div>
         </nav>
       </header>
-
-      <Hero />
-      <Tech />
-      <Expe />
-      <Contact />
-      <Footer />
-
       <style jsx>{`
         @keyframes slideDownBounce {
           0% {

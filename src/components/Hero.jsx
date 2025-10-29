@@ -26,7 +26,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
+    <div className="LogoFont relative min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
@@ -59,7 +59,7 @@ export default function Hero() {
         >
           {/* Name with Gradient */}
           <div className="space-y-4">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold">
+            <h1 className="LogoFont text-6xl md:text-7xl lg:text-8xl font-bold">
               <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-gradient">
                 Ravi Singh
               </span>
@@ -135,16 +135,16 @@ export default function Hero() {
         >
           <div className="relative group">
             {/* Animated Ring */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 animate-spin-slow blur-2xl opacity-50"></div>
+            <div className="absolute inset-0 rounded-full bg-linear-to-r from-purple-600 via-pink-600 to-blue-600 animate-spin-slow blur-2xl opacity-50"></div>
             
             {/* Image Container */}
             <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full bg-linear-to-r from-purple-600 to-pink-600 animate-pulse"></div>
               <div className="relative w-[400px] h-[400px] md:w-[500px] md:h-[500px] rounded-full overflow-hidden border-4 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500">
                 <img
                   src="https://res.cloudinary.com/dnpn8ljki/image/upload/w_2000,h_2000,c_fill,f_auto,q_auto/v1761640507/Ravi_Pic_iyc9mv.png"
                   alt="Ravi Singh"
-                  className="w-full h-full object-cover animate-float"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -213,10 +213,6 @@ export default function Hero() {
         .animate-gradient {
           background-size: 200% 200%;
           animation: gradient 3s ease infinite;
-        }
-
-        .animate-float {
-          animation: float 6s ease-in-out infinite;
         }
 
         .animate-spin-slow {
