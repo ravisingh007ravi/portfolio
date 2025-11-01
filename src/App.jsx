@@ -3,6 +3,9 @@ import Navbar from './components/Navbar/'
 import Hero from './components/Hero'
 import Tech from './components/Tech'
 import Exp from './components/Expe'
+import Project from './components/Project'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -10,7 +13,10 @@ export default function App() {
       <Navbar />   
       <Hero/>
       <Tech/>
-      {/* <Exp/> */}
+      <Exp/>
+      <Project/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }
